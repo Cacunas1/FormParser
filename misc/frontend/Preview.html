@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Show Files</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <style>
+
+  footer{
+    background-color: #f5f5f5;
+    position: fixed;
+    height: 50px;
+    bottom: 0;
+    width: 100%;
+  }
+  </style>
+</head>
+
+<body>
+
+<nav class="navbar navbar-dark bg-dark">
+  <span class="navbar-brand mb-0 h1">Form Parser</span>
+</nav>
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="Choose_directory.html">Choose Directory</a></li>
+    <li class="breadcrumb-item"><a href="Select_Files.html">Select Files</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Preview Files</li>
+  </ol>
+</nav>
+
+<div class="main">
+  <div class="jumbotron text-center">
+    <h4>LOGO</h4> 
+  </div>
+
+  <div class="container-table">
+
+      <table class="table">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col-sm">Id</th>
+            <th scope="col-sm">File</th>
+            <th scope="col-sm">Name</th>
+            <th scope="col-sm">Last Name</th>
+            <th scope="col-sm">Age</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>MikeMuller_LicenciaMedica.png</td>
+            <td>Mike</td>
+            <td>Muller</td>
+            <td>40</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>StephanieHills_LicenciaMedica.png</td>
+            <td>Stephanie</td>
+            <td>Hills</td>
+            <td>25</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>PaulUnderwood_LicenciaMedica.png</td>
+            <td>Paul</td>
+            <td>Underwood</td>
+            <td>34</td>
+          </tr>
+          <tr>
+            <th scope="row">4</th>
+            <td>JuanUrrutia_LicenciaMedica.png</td>
+            <td>Juan</td>
+            <td>Urrutia</td>
+            <td>31</td>
+          </tr>
+          <tr>
+            <th scope="row">5</th>
+            <td>DonMati_LicenciaMedica.png</td>
+            <td>Don</td>
+            <td>Mati</td>
+            <td>25</td>
+          </tr>
+        </tbody>
+      </table>
+
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3"></div>
+  
+        <div class="col-md-6">
+          <div align="center">
+            <a href="Select_Files.html" class="btn btn-dark btn-lg">Back</a> <a href="" class="btn btn-danger btn-lg" data-toggle="tooltip" data-placement="right" title="Validate if the Fields are correct">Validate</a>
+          </div>
+        </div>
+
+        <script>
+          $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+          })
+        </script>
+
+        <div class="col-md-3"></div>
+      </div>
+    </div>
+
+</div>
+
+<footer class="footer py-2">
+  <div class="container" align="center">
+    <span class="text-muted">© 2019 Evalueserve</span>
+  </div>
+</footer>
+
+</body>
+
+
+
+</html>

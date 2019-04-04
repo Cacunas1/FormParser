@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html  lang="en">
+<head>
+  <title>Choose directory</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <style>
+  .fakeimg {
+    height: 200px;
+    background: #aaa;
+  }
+
+  footer{
+    background-color: #f5f5f5;
+    position: fixed;
+    height: 50px;
+    bottom: 0;
+    width: 100%;
+  }
+  </style>
+
+</head>
+
+<body>
+
+<nav class="navbar navbar-dark bg-dark">
+  <span class="navbar-brand mb-0 h1">Form Parser</span>
+  <!--<img src="/docs/4.0/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="">-->
+</nav>
+
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item active" aria-current="page">Choose Directory</li>
+  </ol>
+</nav>
+
+<div class="main">
+  <div class="jumbotron text-center">
+    <h4>LOGO</h4>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3"></div>
+  
+      <div class="col-md-6">
+          <div class="container">
+
+            <div class="input-group mb-3">
+              <div class="custom-file">
+                <input type="file" class="custom-file-input" id="inputGroupFile02" webkitdirectory directory multiple/>
+                <!--<input type="file" class="custom-file-input" id="inputGroupFile02"/>-->
+                <label class="custom-file-label" for="inputGroupFile02"></label>
+              </div>
+            </div>
+
+            <div class="card border-dark mb-3" style="max-width: 50rem;" align="center">
+              <div class="card-body text-dark">
+                <p class="card-text">Pick the Folder you would like to Scan</p>
+              </div>
+            </div>
+
+            <div align="center">
+              <a href="Select_Files.html" class="btn btn-danger btn-lg" data-toggle="tooltip" data-placement="right" title="Go to Next page to select your files">Next</a>
+             <!-- <button class="btn btn-dark btn-lg" type="submit">Next</button>-->
+            </div>
+      
+            <script>
+              $('#inputGroupFile02').on('change',function(){
+                  //get the file name
+                  var fileName = $(this).val();
+                  //var fileName = $(this).val().replace('C:\\fakepath\\', " ");
+                  //replace the "Choose a file" label
+                  $(this).next('.custom-file-label').html(fileName);
+              })
+
+              $(function () {
+                $('[data-toggle="tooltip"]').tooltip()
+              })
+            </script>
+
+          </div>
+      </div>
+
+      <div class="col-md-3"></div>
+    </div>
+  </div>
+</div>
+
+<footer class="footer py-2">
+  <div class="container" align="center">
+    <span class="text-muted">© 2019 Evalueserve</span>
+  </div>
+</footer>
+
+</body>
+
+</html>
